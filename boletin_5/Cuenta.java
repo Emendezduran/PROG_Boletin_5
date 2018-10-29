@@ -65,12 +65,11 @@ public class Cuenta {
     }
        
     
-    
-    
-    /*public void trasferencia(cuentaDestino, importe){
-    String cuentaDestino;
-    double importe;     
-    }*/
-                  
-        
+    public void trasferencia(Cuenta cuentaDest, double imp){
+    Cuenta cuentaDestino = cuentaDest;     
+    double importe = imp; 
+    saldo -= importe;
+    cuentaDest.setIngreso(importe);
+    }
+                         
 }
